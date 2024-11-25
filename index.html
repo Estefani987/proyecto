@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Videos YouTube</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Buscador de Videos YouTube</h1>
+        <input type="text" id="searchInput" placeholder="Buscar canciones...">
+        <button onclick="searchVideos()">Buscar</button>
+    </header>
+    <main>
+        <section id="video-list">
+            <h2>Resultados</h2>
+            <ul id="results">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div id="player-container">
+            <h2>Reproductor de Video</h2>
+            <div id="player"></div>
+        </div>
+        <button onclick="savePlaylist()">Guardar Playlist</button>
+        <button onclick="loadPlaylist()">Cargar Playlist</button>
+        <ul id="playlist">
+        </ul>
+    </footer>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
